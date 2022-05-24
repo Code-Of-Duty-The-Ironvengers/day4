@@ -2,6 +2,10 @@
 // word: definition
 // key/ value
 
+// for (const spitfire in firstObject)
+// spitfire = key
+// spitfire = theRealFirstObject
+// spitfire = willTheRealSlimShadyPleaseStandUp
 const firstObject = {
   key: "value",
   theRealFirstObject: true,
@@ -104,3 +108,42 @@ getObject.from = "Germany";
 getObject.age = 12;
 getObject.whereWasHe = "on vacation";
 console.log(arrExample);
+console.clear();
+
+for (const aderemi in firstObject) {
+  console.log(
+    "the name does not matter, only the value:",
+    firstObject[aderemi]
+  );
+}
+
+console.clear();
+
+// const firstObject = {
+// 	theRealFirstObject: true,
+// 	willTheRealSlimShadyPleaseStandup: false,
+// 	example: [1, 2, 3, 4],
+// 	word: "LOOK MOM, IM HERE",
+//   };
+
+for (const key in firstObject) {
+  const value = firstObject[key];
+  console.log("key:", key, "-> value:", value);
+}
+
+// const joao = {
+//   name: "Joao",
+// };
+
+// joao.age = 23;
+// console.log("joao:", joao);
+// const nuno = joao;
+
+// nuno.name = "Nuno";
+
+console.log(Object.keys(firstObject));
+
+// const canIFreeze = [];
+// Object.freeze(canIFreeze);
+// canIFreeze.push(1); // this will break
+// console.log(canIFreeze);
